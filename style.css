@@ -1,0 +1,134 @@
+body{
+    margin: 0; /* margem de fora caixa */
+    font-family: 'open sans' sans-serif;
+    min-height: 100vh;
+
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+
+}
+
+.page{ /*largura de borda em borda da caixa*/ /*usamos o padding para fazer um preenchimento dentro da caixa*/
+    width: 1008px;
+    margin: 0 auto ; /*preenchimento de fora da caixa*/
+    padding-top: 65px; /* preenchendo a caixa internamente  para que a margin ocupe 100% de Viewport*/
+}
+
+nav{
+
+    display: flex; /* pode fazer a movimentação do que está no display */
+    justify-content: space-between;  /* espaço entre os itens no cabeçalho */
+    align-items: center;
+
+    margin-bottom: 55px;
+
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*pseudo-class quando passo o mouse em cim do texto, o texto fica mais escuro*/
+ul li a:hover{
+    font-weight: bold;
+    opacity: 1;
+
+}
+
+ul li a { /* tira o sublinhado do link */
+    color:#1F1534;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+h1{
+
+    font-family: 'mulish' sans-serif;
+    font-weight: normal;
+    font-size: 49px;
+    line-height: 56px;
+    margin-bottom: 40px;
+    margin-top: 119px;
+
+}
+
+
+h1 span{
+
+    font-weight: bold;
+    color: #89C5CC;
+}
+
+
+main{
+
+    display: flex;
+    justify-content: space-between;  /* espaço entre os itens */
+    align-items: center;
+    
+}
+
+p{
+    line-height: 28px;
+    font-size: 14px;
+    color: #7D7987;
+    margin-bottom: 56px;
+
+}
+
+
+footer{
+
+    margin-top: 82px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 28px
+   
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+button{
+
+    font-family: 'DM Sans' sans-serif;
+    font-weight: normal;
+    color: #FFFFFF;
+    background: #69B99D; /* cor de fundo do botão */
+    border-radius: 4px; /* curvatura das pontas */
+    display: inline-flex;
+    height: 56px;
+    padding: 14px 32px 15px 32px; /*preenchimento interno */
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /*espaçamento */
+    flex-shrink: 0;
+    text-transform: uppercase;
+
+
+
+    cursor: pointer;
+}
+
+
+button:hover{ /*escurece o botão quando coloca o mouse em cima */
+
+    background: #4e917a;
+
+}
+
+#balls{
+
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+
+}
